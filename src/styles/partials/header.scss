@@ -1,0 +1,25 @@
+header {
+  position: relative;
+}
+
+.header-home {
+  float: left;
+}
+
+.header-nav {
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  width: 50%;
+
+  li {
+    display: inline-block;
+    padding: 0 15px;
+  }
+}
+
+.header-rsvp {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
