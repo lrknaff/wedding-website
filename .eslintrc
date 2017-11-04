@@ -1,8 +1,27 @@
 {
-  parser: "babel-eslint",
-  "rules": {
-    "max-len": [1, 120, 2, {ignoreComments: true}],
-    "prop-types": [2]
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "plugins": [
+    "react"
+  ],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "mocha": true,
+    "node": true
   },
-  "extends": ["airbnb-base"]
+  "rules": {
+    "react/prefer-stateless-function": "off",
+    "react/jsx-filename-extension": "off",
+    "semi": ["error", "never"],
+    "max-len": ["warn", 120],
+    "class-methods-use-this": [0],
+    "no-unused-vars": "off",
+    "react/prop-types": "off",
+    "jsx-a11y/img-has-alt": "off",
+    "import/no-extraneous-dependencies": "off",
+    "quote-props": "off",
+    "no-param-reassign": "off",
+    "react/jsx-no-bind": "off"
+  }
 }
